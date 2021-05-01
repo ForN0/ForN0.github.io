@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+  
+
+    <head>
+      <meta charset="utf-8" />
+        
+      <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1"
+      />
+      <title>《校园云网络安全系统综合项目实战方案》 |  ForN0</title>
+  <meta name="generator" content="hexo-theme-ayer">
+      
+      <link rel="shortcut icon" href="/favicon.ico" />
+       
+<link rel="stylesheet" href="/dist/main.css">
+
+      <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/Shen-Yu/cdn/css/remixicon.min.css"
+      />
+      
+<link rel="stylesheet" href="/css/custom.css">
+ 
+      <script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+       
+ 
+
+      <!-- mermaid -->
+      
+    <link rel="alternate" href="/atom.xml" title="ForN0" type="application/atom+xml">
+</head>
+  </html>
+</html>
+
+
+<body>
+  <div id="app">
+    
+      <canvas class="fireworks"></canvas>
+      <style>
+        .fireworks {
+          position: fixed;
+          left: 0;
+          top: 0;
+          z-index: 99999;
+          pointer-events: none;
+        }
+      </style>
+      
+      
+    <main class="content on">
+      <section class="outer">
+  <article
+  id="post-2021-C4"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h1 class="article-title sea-center" style="border-left:0" itemprop="name">
+  《校园云网络安全系统综合项目实战方案》
+</h1>
+ 
+
+      
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2021/05/01/2021-C4/" class="article-date">
+  <time datetime="2021-05-01T00:40:19.000Z" itemprop="datePublished">2021-05-01</time>
+</a>   
+<div class="word_count">
+    <span class="post-time">
+        <span class="post-meta-item-icon">
+            <i class="ri-quill-pen-line"></i>
+            <span class="post-meta-item-text"> Word count:</span>
+            <span class="post-count">3.4k</span>
+        </span>
+    </span>
+
+    <span class="post-time">
+        &nbsp; | &nbsp;
+        <span class="post-meta-item-icon">
+            <i class="ri-book-open-line"></i>
+            <span class="post-meta-item-text"> Reading time≈</span>
+            <span class="post-count">12 min</span>
+        </span>
+    </span>
+</div>
+ 
+    </div>
+      
+    <div class="tocbot"></div>
+
+
+
+
+  
+    <div class="article-entry" itemprop="articleBody">
+       
+  <p>这是一个</p>
+<span id="more"></span>
+
+<h2 id="Part01-挑战书"><a href="#Part01-挑战书" class="headerlink" title="Part01: 挑战书"></a>Part01: 挑战书</h2><p><strong>尊敬的赛组老师您好：<br></strong><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;信息网络时代已然到来，云+安全成为社会各行各业的热题。没有网络安全就没有国家安全，作为计算机系的青年一代人，本着将理论知识升华为项目实战的初心：<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;谨以此向2021年中国高校计算机大赛——网络技术挑战赛-A系列发起挑战！<br><br><br><br></p>
+<h2 id="Part02-设计背景"><a href="#Part02-设计背景" class="headerlink" title="Part02: 设计背景"></a>Part02: 设计背景</h2><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;从2010年，在信息化“十二五”规划中提出的“智慧校园”。到2018年，国家标准化《智慧校园总体框架》的发布。据网络问卷调研不完全数据显示，时至今日，智慧校园这个以云和IoT技术依托将教学、科研、管理和校园生活一体化的已经融入在近90%的高等院校中。<br><br><br><br></p>
+<h2 id="Part03-项目蓝图"><a href="#Part03-项目蓝图" class="headerlink" title="Part03: 项目蓝图"></a>Part03: 项目蓝图</h2><p><strong>前言说明：</strong><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;本项目是一套模拟高等院校网络系统环境进行的综合实战项目挑战方案，旨在将网络设计规划、系统设计规划、校园云设计规划从3个方向同时展开并进行综合实战，且将整体安全系统意识贯穿在整个 C4 网络综合项目实践挑战之旅中。<p align="center"><img src="/images/blog-all/210501/%E7%BD%91%E7%BB%9C%E8%AE%BE%E8%AE%A1%E8%A7%84%E5%88%92%E5%9B%BE1.png" alt="网络设计规划图1"></p><br><br><br><br></p>
+<h2 id="Part04-规划要点"><a href="#Part04-规划要点" class="headerlink" title="Part04: 规划要点"></a>Part04: 规划要点</h2><h3 id="网络设计规划"><a href="#网络设计规划" class="headerlink" title="网络设计规划"></a>网络设计规划</h3><h4 id="·-区域概述"><a href="#·-区域概述" class="headerlink" title="· 区域概述"></a>· 区域概述</h4><p><strong>Untrust(非信任区)：</strong>在校园出入口放置双活防火墙NGFW-USG6000系列，阻隔恶意流量。<br><br><strong>Trust(信任区)：</strong>在不同子区域设置虚拟网络隔离，放置多点AP无线设备提供WiFi信号通过AC管理，同时实现校园无线流量身份鉴权识别，流量监控管理以便将非法流量下线处置，保证无线网上冲浪的安全性。<br><br><strong>DMZ(军事区)：</strong>放置防火墙等安全设备，进行VPN配置，方便远程与异地办公。<br></p>
+<h4 id="·-无线校园网"><a href="#·-无线校园网" class="headerlink" title="· 无线校园网"></a>· 无线校园网</h4><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;随着现代通信技术发展，无线网络越来越广泛地应用，基于计算机局域网技术的无线校园网得到推广。无线校园网以其具备的便携灵活性满足了师生们在随时随地移动办公学习的迫切需求，弥补了传统有线网络布线复杂、高成本、扩展性弱的网络盲点。<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;技术点关键点：WVLAN、AP、AC</p>
+<h4 id="·-eSight系统"><a href="#·-eSight系统" class="headerlink" title="· eSight系统"></a>· eSight系统</h4><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;部署eSight作为统一运维管理结点，降低运维成本，提升网络运维效率。<br><br></p>
+<h3 id="系统设计规划"><a href="#系统设计规划" class="headerlink" title="系统设计规划"></a>系统设计规划</h3><h4 id="·-Linux简介"><a href="#·-Linux简介" class="headerlink" title="· Linux简介"></a>· Linux简介</h4><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Linux 是一个自由、免费、开源的操作系统，是不受任何商品化软件版权制约的、全世界都能使用的类Unix兼容产品。因安全性稳定性极高，本项目系统侧主要采用Linux作为操作系统，实现整个项目服务上的架构。</p>
+<h4 id="·-系统服务设计"><a href="#·-系统服务设计" class="headerlink" title="· 系统服务设计"></a>· 系统服务设计</h4><p><strong>校园官网-WEB：</strong>采用LNMP架构(Linux+Nginx+MySQL+PHP)。<br><br><strong>校园网盘-NextCloud：</strong>一款开源的优秀网盘文件管理系统，可以为全校同学提供定量的存储资源空间。<br><br><strong>校园码云-Gitee：</strong>一款开源的优秀代码托管系统，可以为提供极佳的校园代码交友体验。<br><br><strong>校园天眼-Prometheus+Granafa：</strong>一款开源可自定制二次开发的开源监控系统，能用于统一的设备监管审计运维。<br><br><strong>镜像源站：</strong>收集更新常用镜像及安装包，提供统一的快速软件部署服务源，高速便捷内网且方便外网展示开源精神。</p>
+<h4 id="·-虚拟化与集群技术"><a href="#·-虚拟化与集群技术" class="headerlink" title="· 虚拟化与集群技术"></a>· 虚拟化与集群技术</h4><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;虚拟化通常指通过软件模拟的具有完整硬件系统功能的、运行在一个完全隔离环境中的完整计算机系统。系统设计将与云设计相结合，选用OpenStack技术对实有的硬件物理服务器资源进行虚拟化，在云上创建不同网段对应不同片区的资源，实现对全局资源的统一管理和监控。更进一步的，可以在云上建Docker，打镜像，实现资源的灵活管理，提高可用性。且考虑到稳定性和实用性，后期会考虑采用分布式集群方式部署相关的系统业务。<br><br></p>
+<h3 id="校园云设计规划"><a href="#校园云设计规划" class="headerlink" title="校园云设计规划"></a>校园云设计规划</h3><h4 id="·-设计概要"><a href="#·-设计概要" class="headerlink" title="· 设计概要"></a>· 设计概要</h4><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;主要基于华为云产品的选用。<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;校园云设计规划由桌面管理软件FusionAccess、云操作系统软件FusionCompute和FusionManager（选）云监控三部分组成，并结合主流OpenStack技术将底层环境虚拟化后将系统规划设计部分进行上云。<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;方案计划，首先在CNA（计算节点代理）的基础上部署VRM（虚拟资源管理）建立FusionCompute平台；其次，在已有FusionCompute的环境基础之上，搭建FusionAccess平台，通过该平台制作模板机为教学环境分发相应云桌面；再次FusionManager（选）同样在FusionCompute的基础上搭建，通过统一的接口对整个云平台进行维护、监控。<p align="center"><img src="/images/blog-all/210501/Fusion%E7%BB%84%E4%BB%B6%E5%9B%BE.png" alt="Fusion组件图"></p></p>
+<h4 id="·-方案价值"><a href="#·-方案价值" class="headerlink" title="· 方案价值"></a>· 方案价值</h4><p><strong>数据上移，信息安全。</strong>桌面云环境可打破传统桌面环境的物理限制，做到终端和信息的分离，使得桌面和数据在后端集中存储、处理。<br><br><strong>高效维护，自动管控。</strong>拥有一键式维护工具，大大降低维护成本，维护效率提高至四倍以上。<br><br><strong>应用上移，业务可靠。</strong>业务和应用都在数据中心处理，机房保障系统可以包保障99.9%的业务员稳定性，保持业务的连续性。<br><br><strong>无缝切换，移动办公。</strong>数据和桌面都集中保存、运行在数据中心，因此可以不中断应用的运行，无缝切换办公地点，做到真正的移动办公。 <br><br><strong>资源弹性，复用共享。</strong>所有资源都在数据中心，可以时限资源的集中管控，弹性调度。</p>
+<h4 id="·-Fusion系列套件说明"><a href="#·-Fusion系列套件说明" class="headerlink" title="· Fusion系列套件说明"></a>· Fusion系列套件说明</h4><p><strong>-FusionCompute</strong><br><br>虚拟化基础引擎，它采用了虚拟化技术对硬件进行虚拟化处理，主要包含计算资源、存储资源、网络资源虚拟化。通过提供的图形界面可以直观了解资源的使用情况并且对这些虚拟资源进行统一管理、监控。<br><br><strong>-FusionAccess</strong><br><br>基于云平台的一种虚拟桌面应用，可以为提供学生分发、回收云桌面等功能。学生体验到的虚拟机与普通电脑无异，其使用的物理设备为瘦终端，在此可以方面减少购买物理设备的开销。<br><br><strong>-FusionManager</strong><br><br>云管理平台，其核心为云服务自动化和资源智能运维，为提供云数据中心的管理。FusionManager可以接入和管理物理资源、虚拟化资源、桌面云以及云存储资源。其中基于角色访问控制的策略、为资源提供虚拟化、虚拟化资源的管理监控、容灾备份等功能。<br><br><br><br></p>
+<h2 id="Part05-实战方案导图"><a href="#Part05-实战方案导图" class="headerlink" title="Part05: 实战方案导图"></a>Part05: 实战方案导图</h2><p>《校园云网络安全系统综合项目实战方案》-导图：<br><img src="/images/blog-all/210501/%E8%AE%BE%E8%AE%A1%E8%A7%84%E5%88%92%E5%9B%BE.png" alt="方案导图"><br><br><br><br></p>
+<h2 id="Part06-项目实战词云图"><a href="#Part06-项目实战词云图" class="headerlink" title="Part06: 项目实战词云图"></a>Part06: 项目实战词云图</h2><p>《校园云网络安全系统综合项目实战方案》-词云图：<br><img src="/images/blog-all/210501/TEAM.jpg" alt="TEAM"><br><br><br><br></p>
+<h2 id="附-FAQ-TOP8·说明资料"><a href="#附-FAQ-TOP8·说明资料" class="headerlink" title="[附] FAQ TOP8·说明资料"></a>[附] FAQ TOP8·说明资料</h2><h3 id="1-关于WVLAN说明"><a href="#1-关于WVLAN说明" class="headerlink" title="1.关于WVLAN说明"></a>1.关于WVLAN说明</h3><p>无线虚拟局域网是指在无线局域网的基础上，采用网络管理软件构建的可跨越不同网段、不同网络的端到端的逻辑网络。它是以无线方式构建的局域网WLAN，或者说，不用线缆将设备相连的局域网络。无线虚拟局域网，通过网络管理软件，在无线局域网的基础上建立一个逻辑网络，这个逻辑网络中的工作站和服务器可以不受地理位置的限制，但同样具有物理局域网的功能和特点。<br></p>
+<h3 id="2-关于无线AP和AC控制器说明"><a href="#2-关于无线AP和AC控制器说明" class="headerlink" title="2.关于无线AP和AC控制器说明"></a>2.关于无线AP和AC控制器说明</h3><p><strong>无线AP（Access Point）</strong><br><br>即无线接入点，它用于无线网络的无线交换机，也是无线网络的核心。无线AP是移动计算机用户进入有线网络的接入点，主要用于宽带家庭、大楼内部以及园区内部，可以覆盖几十米至上百米。无线AP（又称会话点或存取桥接器）是一个包含很广的名称，它不仅包含单纯性无线接入点（无线AP），同样也是无线路由器（含无线网关、无线网桥）等类设备的统称。<br><br><strong>AC控制器（Access Control）</strong><br><br>它是指无线接入控制服务器(AC)， 接入控制器(AC) 无线局域网接入控制设备，负责把来自不同AP的数据进行汇聚并接入Internet，同时完成AP设备的配置管理、无线用户的认证、管理及宽带访问、安全等控制功能。<br></p>
+<h3 id="3-关于eight平台说明"><a href="#3-关于eight平台说明" class="headerlink" title="3.关于eight平台说明"></a>3.关于eight平台说明</h3><p><strong>esight系统</strong>提供存储、服务器、应用、交换机、路由器、防火墙、WLAN、PON网络、无线宽带集群设备、视频监控、IP话机、视讯设备等多种设备的统一管理，支持多厂商设备统一视图、资源，拓扑、故障、性能以及智能配置功能，同时为客户提供第三方设备的定制能力与告警北向接口，帮助客户打造专属的统一管理系统，降低运维成本，提升运维效率。</p>
+<h3 id="4-为何选用Linux系统"><a href="#4-为何选用Linux系统" class="headerlink" title="4.为何选用Linux系统"></a>4.为何选用Linux系统</h3><p>· Linux系统可用于开源用途，通过开源，使用者不仅可以查看Linux内核的代码，还可以对代码进行修改和搭建。<br><br>· 使用Linux系统的用户很少会遇到系统崩溃的情况，甚至在运行多年也不会出现重大事故，其稳定性可想而知。<br><br>· 用户可以对Linux系统进行自定义，通过编程接口，将自己开发的工具和程序添加到该系统中，以追求更符合自己操作要求的界面。<br><br>· Shell作为Linux系统中最强大的组件，完全可以让运行的程序与内核进行交互。<br><br>· 相对Windows来说，Linux对硬件的需求比较低，也不需要频繁地对硬件进行升级更新。<br><br>· 一般情况，Linux Server只有管理员或特定用户才有访问内核的权限，所以在安全方面来说，受到攻击的次数会相对较低。<br><br>· Linux在使用时是免费的，所以成本会下降很多，即使是购买特定的Linux花费的价格也比其他系统和软件要低。<br><br>· 与Windows Servers不同，Linux Servers可以在不重启服务器的情况下，自由地对系统进行变更，无需购买其他版本才能使用某些特定的功能。<br></p>
+<h3 id="5-关于LNMP的说明"><a href="#5-关于LNMP的说明" class="headerlink" title="5.关于LNMP的说明"></a>5.关于LNMP的说明</h3><p>· LNMP代表的就是：Linux系统下Nginx+MySQL+PHP这种网站服务器架构。<br><br>· Linux是一类Unix计算机操作系统的统称，是目前最流行的免费操作系统。代表版本有：debian、centos、ubuntu、fedora、gentoo等。<br><br>· Nginx是一个高性能的HTTP和反向代理服务器，也是一个IMAP/POP3/SMTP代理服务器。<br><br>· Mysql是一个小型关系型数据库管理系统。<br><br>· PHP是一种在服务器端执行的嵌入HTML文档的脚本语言。<br><br>这四种软件均为免费开源软件，组合到一起，成为一个免费、高效、扩展性强的网站服务系统。<br></p>
+<h3 id="6-关于NEXTCLOUD的说明"><a href="#6-关于NEXTCLOUD的说明" class="headerlink" title="6.关于NEXTCLOUD的说明"></a>6.关于NEXTCLOUD的说明</h3><p><strong>Nextcloud</strong> 是一套用于创建网络硬盘的客户端－服务器软件。其功能与 Dropbox 相近，但 Nextcloud 是自由及开放源代码软件，每个人都可以在私人服务器上安装并运行它。与 Dropbox 等专有服务相比，Nextcloud 的开放架构让用户可以利用应用程序的方式在服务器上新增额外的功能，并让用户可以完全掌控自己的数据。<br></p>
+<h3 id="7-关于Gitee的说明"><a href="#7-关于Gitee的说明" class="headerlink" title="7.关于Gitee的说明"></a>7.关于Gitee的说明</h3><p><strong>Gitee</strong> 是开源中国推出的基于 Git 的代码托管服务。目前已经有注册开发者 600 万，托管超过 1500 万代码仓库。Gitee 包括三个版本，分别是：社区版、企业版和高校版。企业版已为超过 180000 家企业进行服务，高校版已为超过 2000 所高校提供服务。</p>
+<h3 id="8-关于Prometheus、Grafana说明"><a href="#8-关于Prometheus、Grafana说明" class="headerlink" title="8.关于Prometheus、Grafana说明"></a>8.关于Prometheus、Grafana说明</h3><p><strong>Prometheus</strong> 是一套开源的系统监控、报警、时间序列数据库的组合，最初有 SoundCloud 开发的，后来随着越来越多公司使用，于是便独立成开源项目。我们常用的 Kubernetes 容器集群管理中，通常会搭配 Prometheus 一起来进行监控。Prometheus 基本原理是通过 Http 协议周期性抓取被监控组件的状态，而输出这些被监控的组件的 Http 接口为 Exporter，现在各个公司常用的 Exporter 都已经提供了，可以直接安装使用，如 haproxy_exporter、blockbox_exporter、mysqld_exporter、node_exporter 。<br><br><strong>Grafana</strong> 是一个可视化仪表盘，它拥有美观的图标和布局展示，功能齐全的仪表盘和图形编辑器，默认支持 CloudWatch、Graphite、Elasticsearch、InfluxDB、Mysql、PostgreSQL、Prometheus、OpenTSDB 等作为数据源。我们可以将 Prometheus 抓取的数据，通过 Grafana 优美的展示出来，非常直观。<br><br><br></p>
+<h2 id="附-宣传彩蛋"><a href="#附-宣传彩蛋" class="headerlink" title="[附] 宣传彩蛋"></a>[附] 宣传彩蛋</h2><video width="540" height="360" controls>
+<source src="/images/blog-all/210501/C4大赛视频.mp4">
+</video>
+<br> 
+      <!-- reward -->
+      
+      <div id="reword-out">
+        <div id="reward-btn">
+          Donate
+        </div>
+      </div>
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <div class="declare">
+      <ul class="post-copyright">
+        <li>
+          <i class="ri-copyright-line"></i>
+          <strong>Copyright： </strong>
+          
+          Copyright is owned by the author. For commercial reprints, please contact the author for authorization. For non-commercial reprints, please indicate the source.
+          
+        </li>
+      </ul>
+    </div>
+    
+    <footer class="article-footer">
+       
+<div class="share-btn">
+      <span class="share-sns share-outer">
+        <i class="ri-share-forward-line"></i>
+        分享
+      </span>
+      <div class="share-wrap">
+        <i class="arrow"></i>
+        <div class="share-icons">
+          
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="ri-weibo-fill"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="ri-wechat-fill"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="ri-qq-fill"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="ri-douban-line"></i>
+          </a>
+          <!-- <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a> -->
+          
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="ri-facebook-circle-fill"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="ri-twitter-fill"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="ri-google-fill"></i>
+          </a>
+        </div>
+      </div>
+</div>
+
+<div class="wx-share-modal">
+    <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://example.com/2021/05/01/2021-C4/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div id="share-mask"></div>  
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/2021%E5%B9%B4%E4%B8%AD%E5%9B%BD%E9%AB%98%E6%A0%A1%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%A4%A7%E8%B5%9B%E7%BD%91%E7%BB%9C%E6%8A%80%E6%9C%AFC4%E6%8C%91%E6%88%98%E8%B5%9B/" rel="tag">2021年中国高校计算机大赛网络技术C4挑战赛</a></li></ul>
+
+    </footer>
+  </div>
+
+   
+  <nav class="article-nav">
+    
+    
+      <a href="/2021/04/26/20210426/" class="article-nav-link">
+        <strong class="article-nav-caption">下一篇</strong>
+        <div class="article-nav-title">20210426-GitHuber体验之旅Day04</div>
+      </a>
+    
+  </nav>
+
+   
+<!-- valine评论 -->
+<div id="vcomments-box">
+  <div id="vcomments"></div>
+</div>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js"></script>
+<script>
+  new Valine({
+    el: "#vcomments",
+    app_id: "4b9Uyaxf6JjiiYmtGHT8km4m-gzGzoHsz",
+    app_key: "IgGOmgulxuw4GtOldglYjgdt",
+    path: window.location.pathname,
+    avatar: "monsterid",
+    placeholder: "给我的文章加点评论吧~",
+    recordIP: true,
+  });
+  const infoEle = document.querySelector("#vcomments .info");
+  if (infoEle && infoEle.childNodes && infoEle.childNodes.length > 0) {
+    infoEle.childNodes.forEach(function (item) {
+      item.parentNode.removeChild(item);
+    });
+  }
+</script>
+<style>
+  #vcomments-box {
+    padding: 5px 30px;
+  }
+
+  @media screen and (max-width: 800px) {
+    #vcomments-box {
+      padding: 5px 0px;
+    }
+  }
+
+  #vcomments-box #vcomments {
+    background-color: #fff;
+  }
+
+  .v .vlist .vcard .vh {
+    padding-right: 20px;
+  }
+
+  .v .vlist .vcard {
+    padding-left: 10px;
+  }
+</style>
+
+ 
+   
+     
+</article>
+
+</section>
+      <footer class="footer">
+  <div class="outer">
+    <ul>
+      <li>
+        Copyrights &copy;
+        2021
+        <i class="ri-heart-fill heart_icon"></i> ForN0
+      </li>
+    </ul>
+    <ul>
+      <li>
+        
+        
+        
+        Powered by <a href="https://hexo.io" target="_blank">Hexo</a>
+        <span class="division">|</span>
+        Theme - <a href="https://github.com/Shen-Yu/hexo-theme-ayer" target="_blank">Ayer</a>
+        
+      </li>
+    </ul>
+    <ul>
+      <li>
+        
+        
+        <span>
+  <span><i class="ri-user-3-fill"></i>Visitors:<span id="busuanzi_value_site_uv"></span></span>
+  <span class="division">|</span>
+  <span><i class="ri-eye-fill"></i>Views:<span id="busuanzi_value_page_pv"></span></span>
+</span>
+        
+      </li>
+    </ul>
+    <ul>
+      
+    </ul>
+    <ul>
+      
+    </ul>
+    <ul>
+      <li>
+        <!-- cnzz统计 -->
+        
+        <script type="text/javascript" src='https://s9.cnzz.com/z_stat.php?id=1278069914&amp;web_id=1278069914'></script>
+        
+      </li>
+    </ul>
+  </div>
+</footer>
+      <div class="float_btns">
+        <div class="totop" id="totop">
+  <i class="ri-arrow-up-line"></i>
+</div>
+
+<div class="todark" id="todark">
+  <i class="ri-moon-line"></i>
+</div>
+
+      </div>
+    </main>
+    <aside class="sidebar on">
+      <button class="navbar-toggle"></button>
+<nav class="navbar">
+  
+  <div class="logo">
+    <a href="/"><img src="/images/ayer-side.svg" alt="ForN0"></a>
+  </div>
+  
+  <ul class="nav nav-main">
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/">主页</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/archives">归档</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/categories">分类</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags">标签</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags/%E6%97%85%E8%A1%8C/">旅行</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" target="_blank" rel="noopener" href="http://shenyu-vip.lofter.com">摄影</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/friends">友链</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/2019/about">关于我</a>
+    </li>
+    
+  </ul>
+</nav>
+<nav class="navbar navbar-bottom">
+  <ul class="nav">
+    <li class="nav-item">
+      
+      <a class="nav-item-link nav-item-search"  title="Search">
+        <i class="ri-search-line"></i>
+      </a>
+      
+      
+      <a class="nav-item-link" target="_blank" href="/atom.xml" title="RSS Feed">
+        <i class="ri-rss-line"></i>
+      </a>
+      
+    </li>
+  </ul>
+</nav>
+<div class="search-form-wrap">
+  <div class="local-search local-search-plugin">
+  <input type="search" id="local-search-input" class="local-search-input" placeholder="Search...">
+  <div id="local-search-result" class="local-search-result"></div>
+</div>
+</div>
+    </aside>
+    <div id="mask"></div>
+
+<!-- #reward -->
+<div id="reward">
+  <span class="close"><i class="ri-close-line"></i></span>
+  <p class="reward-p"><i class="ri-cup-line"></i>请我喝杯咖啡吧~</p>
+  <div class="reward-box">
+    
+    <div class="reward-item">
+      <img class="reward-img" src="/images/alipay.jpg">
+      <span class="reward-type">支付宝</span>
+    </div>
+    
+    
+    <div class="reward-item">
+      <img class="reward-img" src="/images/wechat.jpg">
+      <span class="reward-type">微信</span>
+    </div>
+    
+  </div>
+</div>
+    
+<script src="/js/jquery-2.0.3.min.js"></script>
+ 
+<script src="/js/lazyload.min.js"></script>
+
+<!-- Tocbot -->
+ 
+<script src="/js/tocbot.min.js"></script>
+
+<script>
+  tocbot.init({
+    tocSelector: ".tocbot",
+    contentSelector: ".article-entry",
+    headingSelector: "h1, h2, h3, h4, h5, h6",
+    hasInnerContainers: true,
+    scrollSmooth: true,
+    scrollContainer: "main",
+    positionFixedSelector: ".tocbot",
+    positionFixedClass: "is-position-fixed",
+    fixedSidebarOffset: "auto",
+  });
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.js"></script>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.css"
+/>
+<script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js"></script>
+
+<script src="/dist/main.js"></script>
+
+<!-- ImageViewer -->
+ <!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" style="display:none" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css">
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"></script>
+
+<script>
+    function viewer_init() {
+        let pswpElement = document.querySelectorAll('.pswp')[0];
+        let $imgArr = document.querySelectorAll(('.article-entry img:not(.reward-img)'))
+
+        $imgArr.forEach(($em, i) => {
+            $em.onclick = () => {
+                // slider展开状态
+                // todo: 这样不好，后面改成状态
+                if (document.querySelector('.left-col.show')) return
+                let items = []
+                $imgArr.forEach(($em2, i2) => {
+                    let img = $em2.getAttribute('data-idx', i2)
+                    let src = $em2.getAttribute('data-target') || $em2.getAttribute('src')
+                    let title = $em2.getAttribute('alt')
+                    // 获得原图尺寸
+                    const image = new Image()
+                    image.src = src
+                    items.push({
+                        src: src,
+                        w: image.width || $em2.width,
+                        h: image.height || $em2.height,
+                        title: title
+                    })
+                })
+                var gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, {
+                    index: parseInt(i)
+                });
+                gallery.init()
+            }
+        })
+    }
+    viewer_init()
+</script> 
+<!-- MathJax -->
+
+<!-- Katex -->
+
+<!-- busuanzi  -->
+ 
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+ 
+<!-- ClickLove -->
+
+<!-- ClickBoom1 -->
+
+<script src="https://cdn.jsdelivr.net/npm/animejs@latest/anime.min.js"></script>
+
+<script src="/js/clickBoom1.js"></script>
+ 
+<!-- ClickBoom2 -->
+
+<!-- CodeCopy -->
+ 
+<link rel="stylesheet" href="/css/clipboard.css">
+ <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+<script>
+  function wait(callback, seconds) {
+    var timelag = null;
+    timelag = window.setTimeout(callback, seconds);
+  }
+  !function (e, t, a) {
+    var initCopyCode = function(){
+      var copyHtml = '';
+      copyHtml += '<button class="btn-copy" data-clipboard-snippet="">';
+      copyHtml += '<i class="ri-file-copy-2-line"></i><span>COPY</span>';
+      copyHtml += '</button>';
+      $(".highlight .code pre").before(copyHtml);
+      $(".article pre code").before(copyHtml);
+      var clipboard = new ClipboardJS('.btn-copy', {
+        target: function(trigger) {
+          return trigger.nextElementSibling;
+        }
+      });
+      clipboard.on('success', function(e) {
+        let $btn = $(e.trigger);
+        $btn.addClass('copied');
+        let $icon = $($btn.find('i'));
+        $icon.removeClass('ri-file-copy-2-line');
+        $icon.addClass('ri-checkbox-circle-line');
+        let $span = $($btn.find('span'));
+        $span[0].innerText = 'COPIED';
+        
+        wait(function () { // 等待两秒钟后恢复
+          $icon.removeClass('ri-checkbox-circle-line');
+          $icon.addClass('ri-file-copy-2-line');
+          $span[0].innerText = 'COPY';
+        }, 2000);
+      });
+      clipboard.on('error', function(e) {
+        e.clearSelection();
+        let $btn = $(e.trigger);
+        $btn.addClass('copy-failed');
+        let $icon = $($btn.find('i'));
+        $icon.removeClass('ri-file-copy-2-line');
+        $icon.addClass('ri-time-line');
+        let $span = $($btn.find('span'));
+        $span[0].innerText = 'COPY FAILED';
+        
+        wait(function () { // 等待两秒钟后恢复
+          $icon.removeClass('ri-time-line');
+          $icon.addClass('ri-file-copy-2-line');
+          $span[0].innerText = 'COPY';
+        }, 2000);
+      });
+    }
+    initCopyCode();
+  }(window, document);
+</script>
+ 
+<!-- CanvasBackground -->
+ 
+<script src="/js/dz.js"></script>
+ 
+<script>
+  if (window.mermaid) {
+    mermaid.initialize({ theme: "forest" });
+  }
+</script>
+
+
+    
+    <div id="music">
+    
+    
+    
+    <iframe frameborder="no" border="1" marginwidth="0" marginheight="0" width="200" height="52"
+        src="//music.163.com/outchain/player?type=2&id=22707008&auto=1&height=32"></iframe>
+</div>
+
+<style>
+    #music {
+        position: fixed;
+        right: 15px;
+        bottom: 0;
+        z-index: 998;
+    }
+</style>
+    
+  </div>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"model":{"scale":1,"hHeadPos":0.5,"vHeadPos":0.618,"jsonPath":"/live2dw/assets/assets/hijiki.model.json"},"display":{"superSample":null,"width":150,"height":300,"position":"right","hOffset":20,"vOffset":-20},"mobile":{"show":true,"scale":0.5},"react":{"opacityDefault":0.7,"opacityOnHover":0.2},"tagMode":false,"debug":false,"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/"});</script></body>
+
+</html>
