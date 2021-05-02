@@ -10,7 +10,7 @@
         <category>DayDUP</category>
       </categories>
       <tags>
-        <tag>HEXO技巧</tag>
+        <tag>HEXO技巧2</tag>
       </tags>
   </entry>
   <entry>
@@ -45,6 +45,9 @@
 <source src="/images/blog-all/C4大赛视频.mp4">
 </video>
 <br>]]></content>
+      <categories>
+        <category>ProjectS</category>
+      </categories>
       <tags>
         <tag>2021年中国高校计算机大赛网络技术C4挑战赛</tag>
       </tags>
@@ -59,8 +62,11 @@
 <h3 id="往昔不堪回首，归来不似少年人"><a href="#往昔不堪回首，归来不似少年人" class="headerlink" title="往昔不堪回首，归来不似少年人"></a>往昔不堪回首，归来不似少年人</h3><hr>
 <p><img src="/images/blog-all/21041601.png" alt="Github" title="小爷就是那么骚"></p>
 ]]></content>
+      <categories>
+        <category>DayDUP</category>
+      </categories>
       <tags>
-        <tag>DayDUP</tag>
+        <tag>HEXO技巧1</tag>
       </tags>
   </entry>
   <entry>
@@ -82,6 +88,9 @@
   </div>
 </div>
 <script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+      <categories>
+        <category>DayDUP</category>
+      </categories>
       <tags>
         <tag>作为日记加密</tag>
       </tags>
@@ -131,5 +140,11 @@
 </tr>
 </tbody></table>
 ]]></content>
+      <categories>
+        <category>DayDUP</category>
+      </categories>
+      <tags>
+        <tag>萌新hacker的blog之旅</tag>
+      </tags>
   </entry>
 </search>

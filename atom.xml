@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-05-02T02:28:24.529Z</updated>
+  <updated>2021-05-02T02:41:13.168Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://example.com/2021/05/02/hello210502/"/>
     <id>http://example.com/2021/05/02/hello210502/</id>
     <published>2021-05-02T02:16:50.000Z</published>
-    <updated>2021-05-02T02:28:24.529Z</updated>
+    <updated>2021-05-02T02:41:13.168Z</updated>
     
     
       
@@ -37,7 +37,7 @@
     <category term="DayDUP" scheme="http://example.com/categories/DayDUP/"/>
     
     
-    <category term="HEXO技巧" scheme="http://example.com/tags/HEXO%E6%8A%80%E5%B7%A7/"/>
+    <category term="HEXO技巧2" scheme="http://example.com/tags/HEXO%E6%8A%80%E5%B7%A72/"/>
     
   </entry>
   
@@ -46,12 +46,14 @@
     <link href="http://example.com/2021/05/01/2021-C4/"/>
     <id>http://example.com/2021/05/01/2021-C4/</id>
     <published>2021-05-01T00:40:19.000Z</published>
-    <updated>2021-05-01T09:43:21.989Z</updated>
+    <updated>2021-05-02T02:40:23.976Z</updated>
     
     
     <summary type="html">&lt;p&gt;第一次带队，第一次参赛。既是终点，也是起点。&lt;br&gt;&lt;br&gt;BY：ForN0、Poison、初五、Windmill、贾良、Dontsay&lt;/p&gt;</summary>
     
     
+    
+    <category term="ProjectS" scheme="http://example.com/categories/ProjectS/"/>
     
     
     <category term="2021年中国高校计算机大赛网络技术C4挑战赛" scheme="http://example.com/tags/2021%E5%B9%B4%E4%B8%AD%E5%9B%BD%E9%AB%98%E6%A0%A1%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%A4%A7%E8%B5%9B%E7%BD%91%E7%BB%9C%E6%8A%80%E6%9C%AFC4%E6%8C%91%E6%88%98%E8%B5%9B/"/>
@@ -63,15 +65,17 @@
     <link href="http://example.com/2021/04/26/20210426/"/>
     <id>http://example.com/2021/04/26/20210426/</id>
     <published>2021-04-26T09:39:19.000Z</published>
-    <updated>2021-05-01T00:48:29.092Z</updated>
+    <updated>2021-05-02T02:41:22.362Z</updated>
     
     
     <summary type="html">&lt;p&gt;原本打死也不会想到，经过学校er的摧残，代码的兴趣居然重燃了！&lt;br&gt;&lt;br&gt;今天更新了不少有趣的功能，一共…？招。&lt;br&gt;&lt;br&gt;PS: 特别鸣谢 -帅气雄哥通过微信打赏了1元钱。&lt;/p&gt;</summary>
     
     
     
+    <category term="DayDUP" scheme="http://example.com/categories/DayDUP/"/>
     
-    <category term="DayDUP" scheme="http://example.com/tags/DayDUP/"/>
+    
+    <category term="HEXO技巧1" scheme="http://example.com/tags/HEXO%E6%8A%80%E5%B7%A71/"/>
     
   </entry>
   
@@ -80,12 +84,14 @@
     <link href="http://example.com/2021/04/25/hello-world/"/>
     <id>http://example.com/2021/04/25/hello-world/</id>
     <published>2021-04-25T12:02:20.000Z</published>
-    <updated>2021-04-26T09:51:24.704Z</updated>
+    <updated>2021-05-02T02:38:41.581Z</updated>
     
     
     <summary type="html">这里藏这个秘密，想知道吗？</summary>
     
     
+    
+    <category term="DayDUP" scheme="http://example.com/categories/DayDUP/"/>
     
     
     <category term="作为日记加密" scheme="http://example.com/tags/%E4%BD%9C%E4%B8%BA%E6%97%A5%E8%AE%B0%E5%8A%A0%E5%AF%86/"/>
@@ -97,7 +103,7 @@
     <link href="http://example.com/2021/04/24/article-titleq/"/>
     <id>http://example.com/2021/04/24/article-titleq/</id>
     <published>2021-04-24T06:28:27.000Z</published>
-    <updated>2021-04-25T13:07:55.408Z</updated>
+    <updated>2021-05-02T02:42:39.391Z</updated>
     
     
       
@@ -110,6 +116,10 @@
     
     
     
+    <category term="DayDUP" scheme="http://example.com/categories/DayDUP/"/>
+    
+    
+    <category term="萌新hacker的blog之旅" scheme="http://example.com/tags/%E8%90%8C%E6%96%B0hacker%E7%9A%84blog%E4%B9%8B%E6%97%85/"/>
     
   </entry>
   
