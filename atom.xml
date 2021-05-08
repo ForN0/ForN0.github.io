@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-05-08T08:34:21.762Z</updated>
+  <updated>2021-05-02T02:48:02.896Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,25 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>职场沟通结课报告</title>
-    <link href="http://example.com/2021/05/08/210508-zcgt/"/>
-    <id>http://example.com/2021/05/08/210508-zcgt/</id>
-    <published>2021-05-08T08:24:21.000Z</published>
-    <updated>2021-05-08T08:34:21.762Z</updated>
-    
-    
-    <summary type="html">慢慢走，很快的</summary>
-    
-    
-    
-    <category term="大三课程报告" scheme="http://example.com/categories/%E5%A4%A7%E4%B8%89%E8%AF%BE%E7%A8%8B%E6%8A%A5%E5%91%8A/"/>
-    
-    
-    <category term="职场沟通心得" scheme="http://example.com/tags/%E8%81%8C%E5%9C%BA%E6%B2%9F%E9%80%9A%E5%BF%83%E5%BE%97/"/>
-    
-  </entry>
   
   <entry>
     <title>hello210502</title>
