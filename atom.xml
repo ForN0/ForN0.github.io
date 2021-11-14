@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-11-07T13:58:42.611Z</updated>
+  <updated>2021-11-14T11:40:04.859Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title></title>
+    <link href="http://example.com/2021/11/14/20211114/"/>
+    <id>http://example.com/2021/11/14/20211114/</id>
+    <published>2021-11-14T09:38:47.664Z</published>
+    <updated>2021-11-14T11:40:04.859Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;—&lt;a href=&quot;https://xz.aliyun.com/t/7692&quot;&gt;https://xz.aliyun.com/t/7692&lt;/a&gt;&lt;br&gt;title: 渗透测试工具集&lt;br&gt;date: 2021-11-14 20:30:09&lt;br&gt;tags: 渗透测试&lt;br&gt;categories: &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;信安之路&lt;br&gt;password: 961125&lt;br&gt;abstract: 渗透测试工具一览&lt;br&gt;message: 猜一猜&lt;br&gt;theme: xray&lt;br&gt;wrong_pass_message: 哈哈，你没猜对，请再试一次。&lt;br&gt;wrong_hash_message: 呵呵，这个文章不能被校验，不过您好事能看看解密后的内容。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;TIPS：自此开启从零开始的信安之路，第三周嗯。这周学校作业上头了，物联网开发最后模拟器调试的时候有点头大，Spring项目正在找回中，这周先学习整理五个Spring框架漏洞，部分也在海外小站验证出了。另有，近期SonarQube 0day情报Sharing，whatweb指纹识别工具食用指南，IIS短文件名枚举漏洞检测（还蛮多的）。。&lt;/p&gt;</summary>
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>保护视力，业余氪书？</title>
