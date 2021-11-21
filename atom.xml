@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-11-14T11:57:09.513Z</updated>
+  <updated>2021-11-21T13:39:37.029Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,25 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>场外红队周【第四弹】</title>
+    <link href="http://example.com/2021/11/21/20211121/"/>
+    <id>http://example.com/2021/11/21/20211121/</id>
+    <published>2021-11-21T12:00:09.000Z</published>
+    <updated>2021-11-21T13:39:37.029Z</updated>
+    
+    
+    <summary type="html">hvv场外红队、触手可及的洞、红蓝对抗学习...</summary>
+    
+    
+    
+    <category term="信安之路" scheme="http://example.com/categories/%E4%BF%A1%E5%AE%89%E4%B9%8B%E8%B7%AF/"/>
+    
+    
+    <category term="漏洞研究" scheme="http://example.com/tags/%E6%BC%8F%E6%B4%9E%E7%A0%94%E7%A9%B6/"/>
+    
+  </entry>
   
   <entry>
     <title>漏洞研究周【第三弹】</title>
